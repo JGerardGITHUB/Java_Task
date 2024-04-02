@@ -1,7 +1,7 @@
 public class tasksheet_1_1_4 {
     public static void main (String[]args){
         
-        int score = 90;
+        int score = 100;
         
         if(score >= 90  && score <= 100) 
             System.out.println("A Grade");
