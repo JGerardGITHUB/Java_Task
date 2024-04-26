@@ -1,17 +1,19 @@
-import java.util.*;
-public class tasksheet_1_1_6{
-    
+import java.util.Scanner;
+
+public class tasksheet_1_1_6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("enter 3 numbers");
-          ArrayList<Integer> z = new ArrayList<>();
-         z.add(input.nextInt());
-         z.add(input.nextInt());
-         z.add(input.nextInt());
-         if(z.get(0)==z.get(1) && z.get(1)==z.get(2))
-             System.out.println("All numbers are equal");
-         else
-            System.out.println("the largest number is: "+Collections.max(z));
-        System.exit(0);
+
+        System.out.println("Enter three numbers: ");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
+        int num3 = input.nextInt();
+
+        if (num1 == num2 && num2 == num3) {
+            System.out.println("All numbers are equal");
+        } else {
+            int max = Math.max(num1, Math.max(num2, num3));
+            System.out.println("The largest number is: " + max);
+        }
     }
 }
