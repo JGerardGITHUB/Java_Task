@@ -12,11 +12,11 @@ abstract class AbstractShape implements Shape {
         this.length = length;
         this.width = width;
     }
-    @Override
+    
     public double calculateArea() {
         return 0.0; 
     }
-    @Override
+   
     public double calculatePerimeter() {
         return 0.0; 
     }
@@ -28,11 +28,11 @@ abstract class AbstractShape implements Shape {
         super(color, 0, 0); 
         this.radius = radius;
     }
-    @Override
+   
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
-    @Override
+    
     public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
@@ -41,11 +41,11 @@ abstract class AbstractShape implements Shape {
     public Rectangle(String color, double length, double width) {
         super(color, length, width);
     }
-    @Override
+   
     public double calculateArea() {
         return length * width;
     }
-    @Override
+   
     public double calculatePerimeter() {
         return 2 * (length + width);
     }
@@ -61,4 +61,3 @@ public class tasksheet_1_1_12 {
         System.out.println("Rectangle Area: " + rectangle.calculateArea());
         System.out.println("Rectangle Perimeter: " + rectangle.calculatePerimeter());
     }
-}
