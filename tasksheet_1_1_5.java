@@ -1,18 +1,13 @@
+import java.util.*;
+
 public class tasksheet_1_1_5 {
-
-  public static void main(String[] args) {
-
-    String inputString = "rotor";
-
-    if (isPalindrome(inputString)) {
-      System.out.println("The input string is a Palindrome");
-    } else {
-      System.out.println("The input is not a Palindrome");
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("input a word");
+        String inputWord = input.nextLine();
+        StringBuilder sb = new StringBuilder(inputWord);
+        String message = ((inputWord.equals(sb.reverse().toString())))? "The input string is a palindrome.": "The input string is not a palindrome.";
+        System.out.println(message);
     }
-  }
 
-  public static boolean isPalindrome(String str) {
-    String reversedString = new StringBuilder(str.toLowerCase()).reverse().toString();
-    return str.toLowerCase().equals(reversedString);
-  }
 }
