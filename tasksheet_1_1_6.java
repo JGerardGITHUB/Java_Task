@@ -1,24 +1,17 @@
-import java.util.Scanner;
-
-public class tasksheet_1_1_6 {
-    int largestNumber(int a, int b, int c) {
-      int largest = Math.max(a, Math.max(b, c));
-      return largest;
-    }   
+import java.util.*;
+public class tasksheet_1_1_6{
+    
     public static void main(String[] args) {
-        tasksheet_1_1_6 s = new tasksheet_1_1_6();
-        int d,e,f;
         Scanner input = new Scanner(System.in);
-          System.out.println("input 1st number:");
-        d = input.nextInt();
-          System.out.println("input 2nd number:");
-        e = input.nextInt();
-          System.out.println("input 3rd number:");
-        f = input.nextInt();
-        
-        if(d == e && e == f)
-            System.out.println("all inputs are equal");
-        else
-            System.out.println("The Largest number is "+s.largestNumber(d, e, f));
+        System.out.println("enter 3 numbers");
+          ArrayList<Integer> z = new ArrayList<>();
+         z.add(input.nextInt());
+         z.add(input.nextInt());
+         z.add(input.nextInt());
+         if(z.get(0)==z.get(1) && z.get(1)==z.get(2))
+             System.out.println("All numbers are equal");
+         else
+            System.out.println("the largest number is: "+Collections.max(z));
+        System.exit(0);
     }
 }
