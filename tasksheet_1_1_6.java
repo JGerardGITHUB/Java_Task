@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class Task6Guide {
+public class tasksheet_1_1_6 {
     int largestNumber(int a, int b, int c) {
       int largest = Math.max(a, Math.max(b, c));
       return largest;
     }   
     public static void main(String[] args) {
-        Task6Guide s = new Task6Guide();
+        tasksheet_1_1_6 s = new tasksheet_1_1_6();
         int d,e,f;
         Scanner input = new Scanner(System.in);
           System.out.println("input 1st number:");
