@@ -1,13 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class tasksheet_1_1_5 {
+public class PalindromeChecker {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("input a word");
-        String inputWord = input.nextLine();
-        StringBuilder sb = new StringBuilder(inputWord);
-        String message = ((inputWord.equals(sb.reverse().toString())))? "The input string is a palindrome.": "The input string is not a palindrome.";
-        System.out.println(message);
-    }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String input = scanner.nextLine();
 
+        StringBuilder reversed = new StringBuilder(input).reverse();
+        
+        if (input.equals(reversed.toString())) {
+            System.out.println("The input string is a palindrome.");
+        } else {
+            System.out.println("The input string is not a palindrome.");
+        }
+    }
 }
