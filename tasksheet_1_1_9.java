@@ -14,11 +14,10 @@ public class tasksheet_1_1_9{
         return floorDiv(a, b);
     }
     public static void main(String[] args) {
-        int num1 = 8;
-        int num2 = 4;
-      System.out.println("Addition: " + add(num1, num2));
-      System.out.println("Subtraction: " + subtract(num1, num2));
-      System.out.println("Multiplication: " + multiply(num1, num2));
-      System.out.println("Division: " + divide(num1, num2));
+       
+      System.out.println("Addition: " + add(8, 4));
+      System.out.println("Subtraction: " + subtract(8, 4));
+      System.out.println("Multiplication: " + multiply(8, 4));
+      System.out.println("Division: " + divide(8, 4));
     }
 }
