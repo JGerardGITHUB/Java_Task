@@ -1,17 +1,23 @@
- public class tasksheet_1_1_8 {
-       
-      public static void main(String[] args) { 
-          int[] parameters = {10, 15, 55};
-   
-      System.out.println("Cumulative Sums:");
-        calculateCumulativeSum(parameters);
+public class CumulativeSum{
+    public static void main(String[] args) {
+        int[] numbers = {4, 5, 10};
+        calculateCumulativeSum(numbers);
     }
-      public static void calculateCumulativeSum(int... values){
-          int cumulativeSum = 0;
-      
-          for (int value : values) {
-              cumulativeSum += value; 
-      System.out.println(value +" = "+ cumulativeSum);
+
+    public static void calculateCumulativeSum(int... nums) {
+        int totalSum = 0;
+        int cumulativeSum = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            cumulativeSum = 0; 
+            for (int j = 1; j <= nums[i]; j++) {
+                cumulativeSum += j;
+            }
+            totalSum += cumulativeSum;
+
+            System.out.println("Parameter " + (i + 1) + ": " + nums[i] + " = " + cumulativeSum);
+        }
+
+        System.out.println("Total Sum of Cumulative Sums: " + totalSum);
     }
-    }
-    }
+}
