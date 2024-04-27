@@ -1,10 +1,10 @@
-public class CumulativeSum{
+public class tasksheet_1_1_8{
     public static void main(String[] args) {
         int[] numbers = {4, 5, 10};
-        calculateCumulativeSum(numbers);
+        CumulativeSum(numbers);
     }
 
-    public static void calculateCumulativeSum(int... nums) {
+    public static void CumulativeSum(int... nums) {
         int totalSum = 0;
         int cumulativeSum = 0;
 
